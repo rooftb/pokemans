@@ -22,7 +22,12 @@ export default function NavBar(props) {
   const context = useContext(AppContext);
 
   return (
-    <Navbar className='mb-2' type='light' theme='light' expand='md'>
+    <Navbar
+      className='mb-2 d-flex align-self-center'
+      type='light'
+      theme='light'
+      expand='md'
+    >
       <NavbarBrand href='#'>Pokédex</NavbarBrand>
       <Nav>
         <select onChange={(e) => context.toggleNums(e)}>
