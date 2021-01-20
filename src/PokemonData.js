@@ -17,7 +17,7 @@ export default function Pokemen(props) {
       .then((data) => {
         setPokemonData(data.results);
       });
-  }, [pokemonData]);
+  }, [context]);
 
   return (
     <div className='d-flex justify-content-center align-items-center align-content-between flex-wrap'>

@@ -26,7 +26,7 @@ export default function Pokemon(props) {
         setStats(data);
       })
       .catch((err) => console.log(err));
-  }, [stats]);
+  }, [details.url]);
 
   return (
     <div>

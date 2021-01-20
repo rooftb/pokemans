@@ -7,7 +7,7 @@ function AppProvider(props) {
 
   function toggleNums(e) {
     setNums(e.target.value);
-    console.log(nums);
+    console.log('nums toggled ' + nums);
   }
 
   const value = {
