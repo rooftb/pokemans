@@ -22,14 +22,13 @@ export default function Pokemen() {
         setLoading(!loading);
       })
       .catch((err) => {
-        setError(error);
+        setError(err);
         setLoading(!loading);
       });
   }, [context]);
 
   return (
     <div className='d-flex justify-content-center align-items-center align-content-between flex-wrap'>
-      {loading ? <Loader /> : <div>{error}</div>}
       {pokemonData &&
         pokemonData.map((pokemon) => (
           <Pokemon key={pokemon.id} details={pokemon} />
